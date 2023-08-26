@@ -54,7 +54,7 @@ public class Employee {
         this.salary = salary;
     }
     public String toString() {
-        return id + " ФИО: " + firstName + " " + secondName + " " + surName + " Отдел: " + department + " Зарплата: " + salary;
+        return getId() + " ФИО: " + getFirstName() + " " + getSecondName() + " " + getSurName() + " Отдел: " + getDepartment() + " Зарплата: " + getSalary();
     }
     public static double sumSalary (Employee[] employees) {
         double sum = 0;
@@ -89,7 +89,9 @@ public class Employee {
         int average = 0;
         double sum = sumSalary(employees);
         double count = employees.length;
-        if (count == 0) return 0;
+        if (count == 0) {
+            return 0;
+        }
         average = (int) (sum/count);
         return average;
     }
