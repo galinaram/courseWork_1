@@ -9,14 +9,7 @@ public class Employee {
     public static int count;
     private final int id;
 
-    public Employee() {
-        firstName = "имя";
-        secondName = "фамилия";
-        surName = "отчество";
-        department = "отдел";
-        salary = 0;
-        id = 0;
-    }
+
 
     public Employee(String firstName, String secondName, String surName, String department, double salary) {
         this.firstName = firstName;
